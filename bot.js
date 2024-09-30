@@ -24,7 +24,7 @@ function createBot() {
     });
 
     bot.on('spawn', () => {
-        console.log(${username} has joined the server!);
+        console.log('${username} has joined the server!');
 
         // Random movement and fighting
         setInterval(() => {
@@ -37,7 +37,7 @@ function createBot() {
 
                 if (distance <= 3) { // Attack range
                     bot.attack(targetZombie); // Attack the zombie
-                    console.log(${username} is attacking a zombie!);
+                    console.log('${username} is attacking a zombie!');
                 } else {
                     bot.lookAt(targetZombie.position.offset(0, 1, 0)); // Look at the zombie
                     bot.setControlState('forward', true); // Move towards the zombie
@@ -71,7 +71,7 @@ function createBot() {
 
         setTimeout(() => {
             if (bot) {
-                console.log(${username} has left the server!);
+                console.log('${username} has left the server!');
                 bot.quit();
             }
             // Restart after 90 seconds after leaving

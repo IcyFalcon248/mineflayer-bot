@@ -7,7 +7,7 @@ function generateRandomName() {
     const nouns = ["Panda", "Dragon", "Knight", "Wizard", "Ninja"];
     const randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
     const randomNoun = nouns[Math.floor(Math.random() * nouns.length)];
-    return ${randomAdjective}${randomNoun}${Math.floor(Math.random() * 1000)}; // e.g., CoolPanda123
+    return '${randomAdjective}${randomNoun}${Math.floor(Math.random() * 1000)}'; // e.g., CoolPanda123
 }
 
 const serverIP = 'TheSMPsFel.aternos.me'; // Updated server hostname
